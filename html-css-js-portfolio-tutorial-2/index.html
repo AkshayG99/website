@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Akshay Gupta</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Akshay Gupta</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img class="main-pic" src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Akshay Gupta</h1>
+        <div class="typing-container">
+          <span id="text"></span><span id="cursor">|</span>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/akshay-m-gupta/" target="_blank"><img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+          /></a>
+
+          <a href="https://github.com/AkshayG99" target="_blank"><img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Full Stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>TensorFlow & PyTorch Course<br />Harvard CS50/CS50P/CS50 AI/CS50 WEB<br/>AWS Cloud Practitioner Certification Course<br/>React Course<br/>JavaScript Course<br/>Advanced Placement Program<br/>SciTech Program</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Welcome! I'm Akshay Gupta, a passionate software engineer dedicated to crafting efficient, user-centric solutions. 
+              With a background in full stack development, I thrive on tackling complex problems and turning ideas into reality. 
+              Whether it's developing scalable applications or diving into machine learning projects, I'm committed to continuous learning and pushing the boundaries of what's possible in technology. 
+              Let's build something amazing together!
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <p class="projects_title">Timeline</p>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/hip-logo.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Honoring Indigenous People</h2>
+            <p class="location_text">Rotary Club | Dec. 2023 - Present | British Columbia</p>
+            <p class="expand-text" data-original-text="In March 2024, I had the privilege of attending a summit in British Columbia focusing on the Indigenous Peoples of Canada.">In March 2024, I had the privilege of attending a summit in British Columbia focusing on the Indigenous Peoples of Canada.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="In March 2024, I had the privilege of attending a summit in British Columbia focusing on the Indigenous Peoples of Canada. Nominated by the Rotary Club of Brampton and National Rotary members, this all-expenses-paid trip is a unique opportunity to engage in a meaningful dialogue about the rich cultures of Canada's Indigenous communities. I am excited to represent the collective efforts of the Rotary community and look forward to bringing back valuable insights to share with my community.">Show More</button>
+            </div>
+          </div>          
+          <!-- Project 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/aws-logo.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">AWS Certification</h2>
+            <p class="location_text">Free Code Camp | Nov. 2023 - Dec. 2023 | Brampton, ON</p>
+            <p class="expand-text" data-original-text="I delved into the intricacies of cloud computing within the Amazon Web Services (AWS) ecosystem. ">I delved into the intricacies of cloud computing within the Amazon Web Services (AWS) ecosystem.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I delved into the intricacies of cloud computing within the Amazon Web Services (AWS) ecosystem. Throughout the certification journey, I honed my understanding of key cloud concepts, AWS services, security measures, and cost management strategies. This comprehensive training equipped me with the knowledge and skills necessary to navigate and leverage AWS technologies effectively.">Show More</button>
+            </div>
+          </div>      
+          <!-- Add more projects as needed -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/deca-logo.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Website and Hoodie Design</h2>
+            <p class="location_text">DECA | Sep. 2023 - Jan. 2024 | Brampton, ON</p>
+            <p class="expand-text" data-original-text="Designed a website and hoodie for a business organization called DECA">Designed a website and hoodie for a business organization called DECA.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I have had the privilege of contributing my creative skills to the DECA club by undertaking both website and hoodie design projects. As a dedicated member of the team, I leveraged my expertise in website design to craft an engaging online platform that reflects the dynamic nature of DECA's activities. Additionally, I took on the challenge of designing exclusive hoodies for the club, ensuring that the apparel captures the essence of DECA's identity.">Show More</button>
+            </div>
+          </div>      
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/interact-logo.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">President</h2>
+            <p class="location_text">Central Peel Interact | Sep. 2023 - Present | Brampton, ON</p>
+            <p class="expand-text" data-original-text="In March 2024, I had the privilege of attending a summit in British Columbia focusing on the Indigenous Peoples of Canada.">In March 2024, I had the privilege of attending a summit in British Columbia focusing on the Indigenous Peoples of Canada.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="In March 2024, I had the privilege of attending a summit in British Columbia focusing on the Indigenous Peoples of Canada. Nominated by the Rotary Club of Brampton and National Rotary members, this all-expenses-paid trip is a unique opportunity to engage in a meaningful dialogue about the rich cultures of Canada's Indigenous communities. I am excited to represent the collective efforts of the Rotary community and look forward to bringing back valuable insights to share with my community.">Show More</button>
+            </div>
+          </div>      
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/vos-logo.jpeg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Committee Chair</h2>
+            <p class="location_text">Vow Of Silence | Sep. 2023 - Oct. 2023 | Brampton, ON</p>
+            <p class="expand-text" data-original-text="I led the Vow of Silence event, where participants refrained from speaking for a day to spotlight social issues.">I led the "Vow of Silence" event, where participants refrained from speaking for a day to spotlight social issues.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I led the Vow of Silence event, where participants refrained from speaking for a day to spotlight social issues. From organizing registrations to orchestrating communication, I ensured the event's success. The collective silence prompted reflective conversations, fostering unity and empathy. This initiative was a powerful way to raise awareness and encourage meaningful dialogue about pressing societal challenges. Additionally, I created a poster campaign that was extremely successful in order to raise awareness about this event.">Show More</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/drycleaner-logo.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Website Design</h2>
+            <p class="location_text">Dry Cleaning Company | June. 2023 - Aug. 2023 | Brampton, ON</p>
+            <p class="expand-text" data-original-text="I took charge of developing a website for a dry cleaning company, overseeing its design and functionality.">I took charge of developing a website for a dry cleaning company, overseeing its design and functionality.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I took charge of developing a website for a dry cleaning company, overseeing its design and functionality. From creating user-friendly interfaces to implementing efficient navigation, my goal was to enhance the customer experience. Through this project, I aimed to modernize the company's online presence, making it more accessible and convenient for customers to engage with the dry cleaning services offered.">Show More</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/atheltic-council-logo.jpeg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Media | Events Coordinator</h2>
+            <p class="location_text">CPSS Athletic Council | Apr. 2023 - Present | Brampton, ON</p>
+            <p class="expand-text" data-original-text="I assumed a leadership role in organizing events for the CPSS Athletic Council, managing the planning and execution processes.">I assumed a leadership role in organizing events for the CPSS Athletic Council, managing the planning and execution processes.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I assumed a leadership role in organizing events for the CPSS Athletic Council, managing the planning and execution processes. From coordinating logistics to ensuring seamless communication, my objective was to create engaging and inclusive athletic events. The initiatives included diverse sports activities and competitions, fostering a sense of community and promoting physical well-being among participants. Through my involvement, I aimed to enhance the overall athletic experience for CPSS students, creating opportunities for enjoyment, teamwork, and healthy competition.">Show More</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/deca-logo.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Marking Director</h2>
+            <p class="location_text">DECA | Nov. 2022 - Present | Brampton, ON</p>
+            <p class="expand-text" data-original-text="I played a pivotal role at DECA, where I took on the responsibility of teaching and mentoring fellow students.">I played a pivotal role at DECA, where I took on the responsibility of teaching and mentoring fellow students.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I played a pivotal role at DECA, where I took on the responsibility of teaching and mentoring fellow students. Through this experience, I aimed to impart valuable business knowledge and skills to enhance the professional development of my peers. My role involved designing and delivering instructional sessions that covered various aspects of business, including marketing, entrepreneurship, and leadership. By fostering a collaborative and educational environment, I contributed to the growth and success of DECA members, preparing them for real-world business challenges.">Show More</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/mun-logo.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Crisis Analyst | Delegate</h2>
+            <p class="location_text">Model United Nations | Sep. 2022 - Present | Brampton, ON</p>
+            <p class="expand-text" data-original-text="I have actively participated in Model United Nations (MUN) events, which simulate various conferences encompassing both fiction and non-fiction scenarios. ">I have actively participated in Model United Nations (MUN) events, which simulate various conferences encompassing both fiction and non-fiction scenarios. </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I have actively participated in Model United Nations (MUN) events, which simulate various conferences encompassing both fiction and non-fiction scenarios. These conferences demand strategic thinking and effective public speaking to excel. Notably, I was one of the 20 delegates invited to represent at the University of Waterloo's MUN Conference and also had the honor of being one of the 10 analysts for another MUN event at the same university. Additionally, I have garnered recognition by winning awards in various local Model United Nations Conferences.">Show More</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/akshay-logo.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Akshay Graphic Design Company | Founder & CEO</h2>
+            <p class="location_text">Graphic Design | Sep. 2022 - Present | Brampton, ON</p>
+            <p class="expand-text" data-original-text="I am the proud founder of Akshay Graphic Design Company.">I am the proud founder of Akshay Graphic Design Company.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I have actively participated in Model United Nations (MUN) events, which simulate various conferences encompassing both fiction and non-fiction scenarios. These conferences demand strategic thinking and effective public speaking to excel. Notably, I was one of the 20 delegates invited to represent at the University of Waterloo's MUN Conference and also had the honor of being one of the 10 analysts for another MUN event at the same university. Additionally, I have garnered recognition by winning awards in various local Model United Nations Conferences.">Show More</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/cs50.jpeg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Harvard Computer Science Courses</h2>
+            <p class="location_text">CS50 & CS50P | Sep. 2022 - Present | Brampton, ON</p>
+            <p class="expand-text" data-original-text="I had the privilege of undertaking Harvard's computer science courses, CS50AI, CS50 and CS50P.">I had the privilege of undertaking Harvard's computer science courses, CS50AI, CS50 and CS50P.</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I had the privilege of undertaking Harvard's computer science courses, CS50I, CS50 WEB, CS50 and CS50P, where I immersed myself in the world of programming languages such as C and Python. These courses provided a robust foundation in computer science, covering a diverse range of topics and practical applications.">Show More</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/./timeline-photos/cpss-logo.svg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Central Peel Secondary School | Advanced Placement (AP)</h2>
+            <p class="location_text">CS50 & CS50P | Sep. 2022 - Present | Brampton, ON</p>
+            <p class="expand-text" data-original-text="I am currently enrolled in the Advanced Placement (AP) program at Central Peel Secondary School (CPSS).">I am currently enrolled in the Advanced Placement (AP) program at Central Peel Secondary School (CPSS).</p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I am currently enrolled in the Advanced Placement (AP) program at Central Peel Secondary School (CPSS). CPSS has been instrumental in fostering my intellectual growth, offering a curriculum that goes beyond standard coursework. The AP program, in particular, has allowed me to explore subjects in greater depth and complexity, preparing me for the academic rigor of higher education. I am an extremely active member of the CPSS community">Show More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TensorFlow</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PyTorch</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <p class="projects_title">Featured</p>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project 0 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 20" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Reinforcement Learning Stock Trader</h2>
+            <p class="location_text">Python | TensorFlow | Reinforcement Learning</p>
+            <p class="expand-text" data-original-text="Reinforcement Learning Stock Trader is a project that uses reinforcement learning techniques to develop a trading strategy for stock markets.">
+              Reinforcement Learning Stock Trader is a project that uses reinforcement learning techniques to develop a trading strategy for stock markets.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented a reinforcement learning model to simulate stock trading strategies. The project involves designing a trading environment, defining reward functions, and training the model to optimize trading decisions. Performance is evaluated based on trading metrics such as cumulative returns and Sharpe ratio. This project showcases my skills in reinforcement learning, financial modeling, and TensorFlow, highlighting an advanced approach to automated trading systems.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/14WDN-3BgPJ2IAyGmSPw_zQOR7UMzcSgW?usp=sharing" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Reinforcement Learning Stock Trader is a project that uses reinforcement learning techniques to develop a trading strategy for stock markets. Using Python and TensorFlow, I implemented a reinforcement learning model to simulate stock trading strategies. The project involves designing a trading environment, defining reward functions, and training the model to optimize trading decisions. Performance is evaluated based on trading metrics such as cumulative returns and Sharpe ratio. This project showcases my skills in reinforcement learning, financial modeling, and TensorFlow, highlighting an advanced approach to automated trading systems.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Linear Classification &#40;Breast Cancer&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="Linear Classification (Breast Cancer) is a machine learning project that applies linear classification techniques to predict the presence of breast cancer based on diagnostic features.">
+              Linear Classification (Breast Cancer) is a machine learning project that applies linear classification techniques to predict the presence of breast cancer based on diagnostic features.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I developed a linear classifier to distinguish between malignant and benign breast cancer cases. The project involves preprocessing the breast cancer dataset, training a linear classification model, and evaluating its performance with metrics such as accuracy, precision, and recall. This project highlights my skills in implementing and fine-tuning classification models, showcasing my proficiency in machine learning and Python programming.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1Ww5a6xcJuKgIb3x4H4b1nk1VtiM9nMWY?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Linear Classification (Breast Cancer) is a machine learning project that applies linear classification techniques to predict the presence of breast cancer based on diagnostic features. Using Python and TensorFlow, I developed a linear classifier to distinguish between malignant and benign breast cancer cases. The project involves preprocessing the breast cancer dataset, training a linear classification model, and evaluating its performance with metrics such as accuracy, precision, and recall. This project highlights my skills in implementing and fine-tuning classification models, showcasing my proficiency in machine learning and Python programming.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Image Classification &#40;CNN CIFAR&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="CNN (CIFAR) is a deep learning project that uses convolutional neural networks to classify images from the CIFAR-10 dataset.">
+              CNN (CIFAR) is a deep learning project that uses convolutional neural networks to classify images from the CIFAR-10 dataset.
+            </p>
+            <p class="expand-text" data-original-text="In this project, I developed a CNN using Python and TensorFlow to achieve high accuracy in classifying images into 10 categories. The CIFAR-10 dataset is preprocessed, including normalization and data augmentation techniques to improve generalization. The network architecture includes convolutional layers, pooling layers, and fully connected layers with dropout for regularization. The model is trained using cross-entropy loss and Adam optimizer, achieving significant accuracy improvements through fine-tuning and hyperparameter optimization. This project highlights my expertise in computer vision and deep learning."></p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1w96rg5WKWrLqOL0c7XkzognKX-L7fhdq?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="CNN (CIFAR) is a deep learning project that uses convolutional neural networks to classify images from the CIFAR-10 dataset. In this project, I developed a CNN using Python and TensorFlow to achieve high accuracy in classifying images into 10 categories. The CIFAR-10 dataset is preprocessed, including normalization and data augmentation techniques to improve generalization. The network architecture includes convolutional layers, pooling layers, and fully connected layers with dropout for regularization. The model is trained using cross-entropy loss and Adam optimizer, achieving significant accuracy improvements through fine-tuning and hyperparameter optimization. This project highlights my expertise in computer vision and deep learning.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/timeline-photos/drycleaner-logo.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">WRINKLES</h2>
+            <p class="location_text">HTML | CSS | JS</p>
+            <p class="expand-text" data-original-text="A website created using HTML, CSS, and JavaScript for WRINKLES, a dry cleaning company, to streamline customer interactions and service bookings.">
+              A website created using HTML, CSS, and JavaScript for WRINKLES, a dry cleaning company, to streamline customer interactions and service bookings.
+            </p>
+            <p class="expand-text" data-original-text="The WRINKLES website, developed using HTML, CSS, and JavaScript, offers a seamless platform for customers to access dry cleaning services. It provides an intuitive interface for scheduling pickups, tracking orders, and exploring service offerings. The design ensures a smooth user experience, emphasizing convenience and efficiency for all users."></p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99?tab=repositories" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="The WRINKLES website, developed using HTML, CSS, and JavaScript, offers a seamless platform for customers to access dry cleaning services. It provides an intuitive interface for scheduling pickups, tracking orders, and exploring service offerings. The design ensures a smooth user experience, emphasizing convenience and efficiency for all users.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/2048-image.jpeg" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">2048</h2>
+            <p class="location_text">JavaScript | CSS | HTML</p>
+            <p class="expand-text" data-original-text="A modern rendition of the classic game 2048, created with JavaScript, CSS, and HTML.">
+              A modern rendition of the classic game 2048, created with JavaScript, CSS, and HTML.
+            </p>
+            <p class="expand-text" data-original-text="Utilizing JavaScript, CSS, and HTML, I embarked on the creation of my rendition of the classic game 2048. Inspired by the original concept, I aimed to blend sleek design with intuitive gameplay mechanics. Leveraging JavaScript for the game logic, CSS for visually appealing aesthetics, and HTML for structuring the layout, I meticulously crafted an engaging user experience. Through this project, I honed my skills in front-end development, mastering the art of combining code and creativity to bring a timeless game to life in the digital realm.">
+            </p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99/2048" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Utilizing JavaScript, CSS, and HTML, I embarked on the creation of my rendition of the classic game 2048. Inspired by the original concept, I aimed to blend sleek design with intuitive gameplay mechanics. Leveraging JavaScript for the game logic, CSS for visually appealing aesthetics, and HTML for structuring the layout, I meticulously crafted an engaging user experience. Through this project, I honed my skills in front-end development, mastering the art of combining code and creativity to bring a timeless game to life in the digital realm.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/fitness-image.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Fitness Tracker</h2>
+            <p class="location_text">Python | .txt</p>
+            <p class="expand-text" data-original-text="A Python-based fitness tracker using text files for data storage and analysis.">
+              A Python-based fitness tracker using text files for data storage and analysis.
+            </p>
+            <p class="expand-text" data-original-text="I developed a fitness tracker using Python and text files for data storage. By leveraging Python's versatility, I designed a robust tracker capable of recording and analyzing fitness data efficiently. Utilizing text files for data storage ensured simplicity and accessibility. This project not only strengthened my Python skills but also provided valuable experience in data management and analysis for fitness tracking purposes.">
+            </p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99/fitness-tracker" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I developed a fitness tracker using Python and text files for data storage. By leveraging Python's versatility, I designed a robust tracker capable of recording and analyzing fitness data efficiently. Utilizing text files for data storage ensured simplicity and accessibility. This project not only strengthened my Python skills but also provided valuable experience in data management and analysis for fitness tracking purposes.">
+                Show More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="projects_title">Artificial Intelligence Projects</p>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project 0 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 10" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">LSTM &#40;Stock Returns&#41;</h2>
+            <p class="location_text">Python | TensorFlow | Time Series Analysis</p>
+            <p class="expand-text" data-original-text="LSTM (Stock Returns) is a project that uses Long Short-Term Memory (LSTM) networks to forecast stock returns.">
+              LSTM (Stock Returns) is a project that uses Long Short-Term Memory (LSTM) networks to forecast stock returns.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented an LSTM model to predict stock returns based on historical data. The project involves data preprocessing, building the LSTM architecture, and training the model on stock price data. Performance is evaluated using metrics such as Mean Squared Error (MSE) and accuracy. This project demonstrates my skills in time series forecasting, deep learning, and TensorFlow, showcasing an effective approach to predicting financial market trends.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1iLEpNsaxs9NrS_VkH1EaMbjH0L2pwH5X?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="LSTM (Stock Returns) is a project that uses Long Short-Term Memory (LSTM) networks to forecast stock returns. Using Python and TensorFlow, I implemented an LSTM model to predict stock returns based on historical data. The project involves data preprocessing, building the LSTM architecture, and training the model on stock price data. Performance is evaluated using metrics such as Mean Squared Error (MSE) and accuracy. This project demonstrates my skills in time series forecasting, deep learning, and TensorFlow, showcasing an effective approach to predicting financial market trends.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Number Classification &#40;ANN&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="ANN (MNIST) is a deep learning project that uses artificial neural networks to classify handwritten digits from the MNIST dataset.">
+              ANN (MNIST) is a deep learning project that uses artificial neural networks to classify handwritten digits from the MNIST dataset.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented a feedforward artificial neural network (ANN) to achieve high accuracy in recognizing handwritten digits. The project preprocesses the MNIST dataset, normalizing pixel values and encoding labels for training. The neural network architecture consists of multiple layers with ReLU activation, followed by a softmax output layer for digit classification. Training involved optimizing parameters using stochastic gradient descent and backpropagation, achieving over 98% accuracy on the test set after 20 epochs. This project demonstrates fundamental concepts of neural network design and training, showcasing my skills in deep learning and Python programming.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1u2L3Z8dGFnIFtLGUkSA2oJznrFktLrdB?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="ANN (MNIST) is a deep learning project that uses artificial neural networks to classify handwritten digits from the MNIST dataset. Using Python and TensorFlow, I implemented a feedforward artificial neural network (ANN) to achieve high accuracy in recognizing handwritten digits. The project preprocesses the MNIST dataset, normalizing pixel values and encoding labels for training. The neural network architecture consists of multiple layers with ReLU activation, followed by a softmax output layer for digit classification. Training involved optimizing parameters using stochastic gradient descent and backpropagation, achieving over 98% accuracy on the test set after 20 epochs. This project demonstrates fundamental concepts of neural network design and training, showcasing my skills in deep learning and Python programming.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Regression Analysis &#40;ANN&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="ANN Regression is a project focusing on applying artificial neural networks to regression problems for predictive analysis.">
+              ANN Regression is a project focusing on applying artificial neural networks to regression problems for predictive analysis.
+            </p>
+            <p class="expand-text" data-original-text="This project involves building an ANN model using Python and TensorFlow to predict continuous values. The dataset is preprocessed by normalizing features and splitting into training and testing sets. The network consists of multiple dense layers with ReLU activation, optimized using mean squared error loss and Adam optimizer. After training, the model's performance is evaluated based on its predictive accuracy, showcasing the application of ANNs in regression tasks and my ability to implement and fine-tune machine learning models."></p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1Suk90ND8WekQUTd648kWEBLUTy2ebERD?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="ANN Regression is a project focusing on applying artificial neural networks to regression problems for predictive analysis. This project involves building an ANN model using Python and TensorFlow to predict continuous values. The dataset is preprocessed by normalizing features and splitting into training and testing sets. The network consists of multiple dense layers with ReLU activation, optimized using mean squared error loss and Adam optimizer. After training, the model's performance is evaluated based on its predictive accuracy, showcasing the application of ANNs in regression tasks and my ability to implement and fine-tune machine learning models.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Image Classification &#40;CNN CIFAR&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="CNN (CIFAR) is a deep learning project that uses convolutional neural networks to classify images from the CIFAR-10 dataset.">
+              CNN (CIFAR) is a deep learning project that uses convolutional neural networks to classify images from the CIFAR-10 dataset.
+            </p>
+            <p class="expand-text" data-original-text="In this project, I developed a CNN using Python and TensorFlow to achieve high accuracy in classifying images into 10 categories. The CIFAR-10 dataset is preprocessed, including normalization and data augmentation techniques to improve generalization. The network architecture includes convolutional layers, pooling layers, and fully connected layers with dropout for regularization. The model is trained using cross-entropy loss and Adam optimizer, achieving significant accuracy improvements through fine-tuning and hyperparameter optimization. This project highlights my expertise in computer vision and deep learning."></p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1w96rg5WKWrLqOL0c7XkzognKX-L7fhdq?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="CNN (CIFAR) is a deep learning project that uses convolutional neural networks to classify images from the CIFAR-10 dataset. In this project, I developed a CNN using Python and TensorFlow to achieve high accuracy in classifying images into 10 categories. The CIFAR-10 dataset is preprocessed, including normalization and data augmentation techniques to improve generalization. The network architecture includes convolutional layers, pooling layers, and fully connected layers with dropout for regularization. The model is trained using cross-entropy loss and Adam optimizer, achieving significant accuracy improvements through fine-tuning and hyperparameter optimization. This project highlights my expertise in computer vision and deep learning.">
+                Show More
+              </button>
+            </div>
+          </div>
+      
+          <!-- Project 4 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Digit Recognition &#40;CNN MNIST&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="CNN (MNIST) is a deep learning project that utilizes convolutional neural networks to classify handwritten digits from the MNIST dataset.">
+              CNN (MNIST) is a deep learning project that utilizes convolutional neural networks to classify handwritten digits from the MNIST dataset.
+            </p>
+            <p class="expand-text" data-original-text="This project involves creating a CNN model using Python and TensorFlow to accurately recognize and classify handwritten digits. The MNIST dataset is preprocessed, including normalization and reshaping to fit the CNN input format. The model architecture consists of convolutional layers with max pooling, followed by fully connected layers and a softmax output layer. Training is performed using cross-entropy loss and the Adam optimizer, achieving high accuracy through iterative improvements and validation. This project showcases my proficiency in building and training CNNs for image classification tasks."></p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1bwAbz5EoLvsNg1tBvB9GrVm7LD_oLJ9R?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="CNN (MNIST) is a deep learning project that utilizes convolutional neural networks to classify handwritten digits from the MNIST dataset. This project involves creating a CNN model using Python and TensorFlow to accurately recognize and classify handwritten digits. The MNIST dataset is preprocessed, including normalization and reshaping to fit the CNN input format. The model architecture consists of convolutional layers with max pooling, followed by fully connected layers and a softmax output layer. Training is performed using cross-entropy loss and the Adam optimizer, achieving high accuracy through iterative improvements and validation. This project showcases my proficiency in building and training CNNs for image classification tasks.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 5-->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Forecasting &#40;Autoregressive Model&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="Forecasting (Autoregressive Model) is a time series analysis project that utilizes autoregressive models to predict future values based on past observations.">
+              Forecasting (Autoregressive Model) is a time series analysis project that utilizes autoregressive models to predict future values based on past observations.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented an autoregressive (AR) model to forecast time series data. The project involves data preprocessing, fitting the AR model to historical data, and making predictions. Key steps include determining the optimal lag order for the AR model, training the model, and evaluating its performance with metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE). This project showcases my skills in time series forecasting and Python programming, demonstrating the application of statistical models for predictive analytics.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1Kmt11kL_k9Zeus9Vzuha9_1BIvVxLzd3?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Forecasting (Autoregressive Model) is a time series analysis project that utilizes autoregressive models to predict future values based on past observations. Using Python and TensorFlow, I implemented an autoregressive (AR) model to forecast time series data. The project involves data preprocessing, fitting the AR model to historical data, and making predictions. Key steps include determining the optimal lag order for the AR model, training the model, and evaluating its performance with metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE). This project showcases my skills in time series forecasting and Python programming, demonstrating the application of statistical models for predictive analytics.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">GAN &#40;Generative Adversarial Network&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="GAN (Generative Adversarial Network) is a deep learning project that involves training two neural networks in a competitive setting to generate realistic data samples.">
+              GAN (Generative Adversarial Network) is a deep learning project that involves training two neural networks in a competitive setting to generate realistic data samples.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented a GAN model where a generator creates synthetic data, and a discriminator evaluates its authenticity. The training process involves adversarial training, where the generator improves its ability to produce realistic data while the discriminator enhances its ability to distinguish between real and synthetic data. This project demonstrates my expertise in generative models and neural network architectures, showcasing skills in deep learning and TensorFlow.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1ldeAuJaT-FT4_Ae2I3oX1karEgnCpAJj?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="GAN (Generative Adversarial Network) is a deep learning project that involves training two neural networks in a competitive setting to generate realistic data samples. Using Python and TensorFlow, I implemented a GAN model where a generator creates synthetic data, and a discriminator evaluates its authenticity. The training process involves adversarial training, where the generator improves its ability to produce realistic data while the discriminator enhances its ability to distinguish between real and synthetic data. This project demonstrates my expertise in generative models and neural network architectures, showcasing skills in deep learning and TensorFlow.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 7 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Linear Classification &#40;Breast Cancer&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="Linear Classification (Breast Cancer) is a machine learning project that applies linear classification techniques to predict the presence of breast cancer based on diagnostic features.">
+              Linear Classification (Breast Cancer) is a machine learning project that applies linear classification techniques to predict the presence of breast cancer based on diagnostic features.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I developed a linear classifier to distinguish between malignant and benign breast cancer cases. The project involves preprocessing the breast cancer dataset, training a linear classification model, and evaluating its performance with metrics such as accuracy, precision, and recall. This project highlights my skills in implementing and fine-tuning classification models, showcasing my proficiency in machine learning and Python programming.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1Ww5a6xcJuKgIb3x4H4b1nk1VtiM9nMWY?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Linear Classification (Breast Cancer) is a machine learning project that applies linear classification techniques to predict the presence of breast cancer based on diagnostic features. Using Python and TensorFlow, I developed a linear classifier to distinguish between malignant and benign breast cancer cases. The project involves preprocessing the breast cancer dataset, training a linear classification model, and evaluating its performance with metrics such as accuracy, precision, and recall. This project highlights my skills in implementing and fine-tuning classification models, showcasing my proficiency in machine learning and Python programming.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 8 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 5" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Linear Regression &#40;Moore's Law&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="Linear Regression (Moore's Law) is a project that uses linear regression techniques to model and predict the trend of Moore's Law, which states that the number of transistors on a microchip doubles approximately every two years.">
+              Linear Regression (Moore's Law) is a project that uses linear regression techniques to model and predict the trend of Moore's Law, which states that the number of transistors on a microchip doubles approximately every two years.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented a linear regression model to analyze historical data on transistor counts and predict future trends. The project involves data preprocessing, fitting the linear regression model, and evaluating its performance using metrics such as Mean Squared Error (MSE) and R-squared. This project demonstrates my skills in statistical modeling and Python programming, showcasing the application of linear regression for trend analysis and prediction.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1mAgTg3_Mf1j5bY3px4MDRVboIcEi37TW?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Linear Regression (Moore's Law) is a project that uses linear regression techniques to model and predict the trend of Moore's Law, which states that the number of transistors on a microchip doubles approximately every two years. Using Python and TensorFlow, I implemented a linear regression model to analyze historical data on transistor counts and predict future trends. The project involves data preprocessing, fitting the linear regression model, and evaluating its performance using metrics such as Mean Squared Error (MSE) and R-squared. This project demonstrates my skills in statistical modeling and Python programming, showcasing the application of linear regression for trend analysis and prediction.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 9 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 6" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">LSTM &#40;Image Classification - MNIST&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="LSTM (Image Classification - MNIST) is a deep learning project that uses Long Short-Term Memory (LSTM) networks to classify handwritten digits from the MNIST dataset.">
+              LSTM (Image Classification - MNIST) is a deep learning project that uses Long Short-Term Memory (LSTM) networks to classify handwritten digits from the MNIST dataset.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented an LSTM model for image classification. The project involves preprocessing the MNIST dataset, constructing the LSTM network, and training it to recognize digits. Key components include LSTM layers for sequential processing and dense layers for classification. The model is trained and evaluated using metrics such as accuracy and loss. This project showcases my skills in recurrent neural networks and their application to image classification tasks, demonstrating proficiency in TensorFlow and deep learning.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1CulFiSrqBnXc3X1AyyGTk8qtowAshvzE?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="LSTM (Image Classification - MNIST) is a deep learning project that uses Long Short-Term Memory (LSTM) networks to classify handwritten digits from the MNIST dataset. Using Python and TensorFlow, I implemented an LSTM model for image classification. The project involves preprocessing the MNIST dataset, constructing the LSTM network, and training it to recognize digits. Key components include LSTM layers for sequential processing and dense layers for classification. The model is trained and evaluated using metrics such as accuracy and loss. This project showcases my skills in recurrent neural networks and their application to image classification tasks, demonstrating proficiency in TensorFlow and deep learning.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 10 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 7" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">LSTM &#40;Long Distance&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="LSTM (Long Distance) is a deep learning project that utilizes Long Short-Term Memory (LSTM) networks to predict long-distance dependencies in sequential data.">
+              LSTM (Long Distance) is a deep learning project that utilizes Long Short-Term Memory (LSTM) networks to predict long-distance dependencies in sequential data.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented an LSTM model to capture long-distance relationships in sequential data. The project involves preprocessing the dataset, designing the LSTM architecture, and training the model. Key components include LSTM layers for sequence processing and dense layers for prediction. The model is evaluated using metrics such as accuracy and loss, demonstrating its effectiveness in capturing long-term dependencies. This project showcases my skills in recurrent neural networks and their application to sequential data analysis.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1icKUIsNB5rYOrRyIGKTEi058bODQr-jh?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="LSTM (Long Distance) is a deep learning project that utilizes Long Short-Term Memory (LSTM) networks to predict long-distance dependencies in sequential data. Using Python and TensorFlow, I implemented an LSTM model to capture long-distance relationships in sequential data. The project involves preprocessing the dataset, designing the LSTM architecture, and training the model. Key components include LSTM layers for sequence processing and dense layers for prediction. The model is evaluated using metrics such as accuracy and loss, demonstrating its effectiveness in capturing long-term dependencies. This project showcases my skills in recurrent neural networks and their application to sequential data analysis.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 11 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 9" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">NLP &#40;Text Preprocessing&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="NLP (Text Preprocessing) is a natural language processing project focused on cleaning and preparing text data for machine learning models.">
+              NLP (Text Preprocessing) is a natural language processing project focused on cleaning and preparing text data for machine learning models.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented various text preprocessing techniques such as tokenization, stemming, lemmatization, and removal of stop words. The project involves preparing raw text data for training NLP models, ensuring improved performance and accuracy. This project showcases my skills in natural language processing and data preprocessing, demonstrating proficiency in TensorFlow and text analytics.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1D18aCabhq1voaxkIXUbK_pJP6EO0ctKL?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="NLP (Text Preprocessing) is a natural language processing project focused on cleaning and preparing text data for machine learning models. Using Python and TensorFlow, I implemented various text preprocessing techniques such as tokenization, stemming, lemmatization, and removal of stop words. The project involves preparing raw text data for training NLP models, ensuring improved performance and accuracy. This project showcases my skills in natural language processing and data preprocessing, demonstrating proficiency in TensorFlow and text analytics.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 12 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 10" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">NLP & CNN &#40;Spam Detection&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="NLP & CNN (Spam Detection) is a project that combines natural language processing and convolutional neural networks to detect spam messages.">
+              NLP & CNN (Spam Detection) is a project that combines natural language processing and convolutional neural networks to detect spam messages.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented a model that preprocesses text data and utilizes a CNN for classification. The project involves text preprocessing, building the CNN architecture, and training the model on labeled data. Key metrics such as accuracy, precision, and recall are used to evaluate performance. This project demonstrates my skills in NLP, deep learning, and TensorFlow, showcasing an effective approach to spam detection.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/13vvd5N4sy8DZ4W8ORJI0__drs6gGuyTn?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="NLP & CNN (Spam Detection) is a project that combines natural language processing and convolutional neural networks to detect spam messages. Using Python and TensorFlow, I implemented a model that preprocesses text data and utilizes a CNN for classification. The project involves text preprocessing, building the CNN architecture, and training the model on labeled data. Key metrics such as accuracy, precision, and recall are used to evaluate performance. This project demonstrates my skills in NLP, deep learning, and TensorFlow, showcasing an effective approach to spam detection.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 13 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 11" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">NLP & RNN &#40;Spam Detection&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="NLP & RNN (Spam Detection) is a project that combines natural language processing and recurrent neural networks to detect spam messages.">
+              NLP & RNN (Spam Detection) is a project that combines natural language processing and recurrent neural networks to detect spam messages.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented a model that preprocesses text data and utilizes an RNN for classification. The project involves text preprocessing, building the RNN architecture, and training the model on labeled data. Key metrics such as accuracy, precision, and recall are used to evaluate performance. This project demonstrates my skills in NLP, deep learning, and TensorFlow, showcasing an effective approach to spam detection.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1qzpPW_CuNz0zYRYQBdPvRn7vVdS7b_5z?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="NLP & RNN (Spam Detection) is a project that combines natural language processing and recurrent neural networks to detect spam messages. Using Python and TensorFlow, I implemented a model that preprocesses text data and utilizes an RNN for classification. The project involves text preprocessing, building the RNN architecture, and training the model on labeled data. Key metrics such as accuracy, precision, and recall are used to evaluate performance. This project demonstrates my skills in NLP, deep learning, and TensorFlow, showcasing an effective approach to spam detection.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 14 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 12" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Recommender Systems &#40;Movie Ratings&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="Recommender Systems (Movie Ratings) is a project that employs collaborative filtering techniques to recommend movies based on user ratings.">
+              Recommender Systems (Movie Ratings) is a project that employs collaborative filtering techniques to recommend movies based on user ratings.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented a recommender system that predicts user preferences and suggests movies accordingly. The project involves data preprocessing, building the collaborative filtering model, and training it on a movie ratings dataset. Key metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) are used to evaluate performance. This project showcases my skills in recommendation systems and TensorFlow, demonstrating the application of machine learning to personalized recommendations.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1Z_g4Bly8nq29o4xqqhMP3woYD1ZV9u6M?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Recommender Systems (Movie Ratings) is a project that employs collaborative filtering techniques to recommend movies based on user ratings. Using Python and TensorFlow, I implemented a recommender system that predicts user preferences and suggests movies accordingly. The project involves data preprocessing, building the collaborative filtering model, and training it on a movie ratings dataset. Key metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) are used to evaluate performance. This project showcases my skills in recommendation systems and TensorFlow, demonstrating the application of machine learning to personalized recommendations.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 15 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 13" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">RNN &#40;CIFAR IMPROVED&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="RNN (CIFAR IMPROVED) is a deep learning project that improves image classification on the CIFAR dataset using recurrent neural networks.">
+              RNN (CIFAR IMPROVED) is a deep learning project that improves image classification on the CIFAR dataset using recurrent neural networks.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented an improved RNN model for image classification on the CIFAR dataset. The project involves data preprocessing, constructing the RNN architecture, and training the model to recognize different classes of images. Performance is evaluated using metrics such as accuracy and loss. This project demonstrates my skills in applying RNNs to image data, showcasing proficiency in TensorFlow and advanced deep learning techniques.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1VJK7ZvWuZstP2IJ2QmQzZp9zuntv8eka?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="RNN (CIFAR IMPROVED) is a deep learning project that improves image classification on the CIFAR dataset using recurrent neural networks. Using Python and TensorFlow, I implemented an improved RNN model for image classification on the CIFAR dataset. The project involves data preprocessing, constructing the RNN architecture, and training the model to recognize different classes of images. Performance is evaluated using metrics such as accuracy and loss. This project demonstrates my skills in applying RNNs to image data, showcasing proficiency in TensorFlow and advanced deep learning techniques.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 16 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 14" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">RNN &#40;Shapes&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="RNN (Shapes) is a deep learning project that uses recurrent neural networks to classify different shapes from image data.">
+              RNN (Shapes) is a deep learning project that uses recurrent neural networks to classify different shapes from image data.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented an RNN model for shape classification. The project involves data preprocessing, constructing the RNN architecture, and training the model to recognize various shapes. Performance is evaluated using metrics such as accuracy and loss. This project demonstrates my skills in applying RNNs to visual data, showcasing proficiency in TensorFlow and deep learning.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1m0G4mpfChM0Z9kKhTjpzxrfjfuY-DWv9?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="RNN (Shapes) is a deep learning project that uses recurrent neural networks to classify different shapes from image data. Using Python and TensorFlow, I implemented an RNN model for shape classification. The project involves data preprocessing, constructing the RNN architecture, and training the model to recognize various shapes. Performance is evaluated using metrics such as accuracy and loss. This project demonstrates my skills in applying RNNs to visual data, showcasing proficiency in TensorFlow and deep learning.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 17 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 15" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">RNN &#40;Sine Wave Predictor - 2&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="RNN (Sine Wave Predictor - 2) is a project that uses recurrent neural networks to predict the values of a sine wave.">
+              RNN (Sine Wave Predictor - 2) is a project that uses recurrent neural networks to predict the values of a sine wave.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented an RNN model to forecast sine wave patterns. The project involves data preprocessing, constructing the RNN architecture, and training the model on sine wave data. Performance is evaluated using metrics such as Mean Squared Error (MSE). This project demonstrates my skills in time series analysis, deep learning, and TensorFlow, showcasing an effective approach to nonlinear time series prediction.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1WNzxoVQMGRRcUM1vFc5U3_0SPqbCSBCY?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="RNN (Sine Wave Predictor - 2) is a project that uses recurrent neural networks to predict the values of a sine wave. Using Python and TensorFlow, I implemented an RNN model to forecast sine wave patterns. The project involves data preprocessing, constructing the RNN architecture, and training the model on sine wave data. Performance is evaluated using metrics such as Mean Squared Error (MSE). This project demonstrates my skills in time series analysis, deep learning, and TensorFlow, showcasing an effective approach to nonlinear time series prediction.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 18 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 16" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">RNN/LSTM &#40;Nonlinear&#41;</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="RNN/LSTM (Nonlinear) is a project that uses recurrent neural networks and long short-term memory networks to model nonlinear time series data.">
+              RNN/LSTM (Nonlinear) is a project that uses recurrent neural networks and long short-term memory networks to model nonlinear time series data.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented an RNN and LSTM model to handle nonlinear time series data. The project involves data preprocessing, building the RNN and LSTM architectures, and training the models. Performance is evaluated using metrics such as Mean Squared Error (MSE) and accuracy. This project showcases my skills in time series analysis, deep learning, and TensorFlow, highlighting an effective approach to complex time series prediction.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1M5SI2RVYvw2CnO92EUdcHRN90XlJrK84?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="RNN/LSTM (Nonlinear) is a project that uses recurrent neural networks and long short-term memory networks to model nonlinear time series data. Using Python and TensorFlow, I implemented an RNN and LSTM model to handle nonlinear time series data. The project involves data preprocessing, building the RNN and LSTM architectures, and training the models. Performance is evaluated using metrics such as Mean Squared Error (MSE) and accuracy. This project showcases my skills in time series analysis, deep learning, and TensorFlow, highlighting an effective approach to complex time series prediction.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 19 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 17" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Serving</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="Serving is a project that focuses on deploying machine learning models to a production environment using TensorFlow Serving.">
+              Serving is a project that focuses on deploying machine learning models to a production environment using TensorFlow Serving.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented a workflow for serving trained models. The project involves setting up TensorFlow Serving, exporting models, and creating REST APIs for model inference. This project demonstrates my skills in model deployment, showcasing an end-to-end solution for bringing machine learning models to production.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1y9m-Rd-MV24If3t6NqHqkpMiq0q17Z6J?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Serving is a project that focuses on deploying machine learning models to a production environment using TensorFlow Serving. Using Python and TensorFlow, I implemented a workflow for serving trained models. The project involves setting up TensorFlow Serving, exporting models, and creating REST APIs for model inference. This project demonstrates my skills in model deployment, showcasing an end-to-end solution for bringing machine learning models to production.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 20 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 18" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Transfer Learning with Data Augmentation</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="Transfer Learning with Data Augmentation is a project that uses pre-trained models and data augmentation techniques to improve the performance of a model on a new dataset.">
+              Transfer Learning with Data Augmentation is a project that uses pre-trained models and data augmentation techniques to improve the performance of a model on a new dataset.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented a transfer learning workflow with data augmentation to enhance the model's performance. The project involves using a pre-trained model, applying various data augmentation techniques, and fine-tuning the model on the new dataset. This project showcases my skills in transfer learning, data augmentation, and TensorFlow, highlighting an effective approach to improve model accuracy on limited data.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1lvQ6GYt14Tv6F2fgmJI_l4Q-1ZOPotdT?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Transfer Learning with Data Augmentation is a project that uses pre-trained models and data augmentation techniques to improve the performance of a model on a new dataset. Using Python and TensorFlow, I implemented a transfer learning workflow with data augmentation to enhance the model's performance. The project involves using a pre-trained model, applying various data augmentation techniques, and fine-tuning the model on the new dataset. This project showcases my skills in transfer learning, data augmentation, and TensorFlow, highlighting an effective approach to improve model accuracy on limited data.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 21 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/TensorFlow_logo.svg.png" alt="Project 19" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Transfer Learning Without Data Augmentation</h2>
+            <p class="location_text">Python | TensorFlow</p>
+            <p class="expand-text" data-original-text="Transfer Learning Without Data Augmentation is a project that uses pre-trained models to improve the performance of a model on a new dataset without applying data augmentation techniques.">
+              Transfer Learning Without Data Augmentation is a project that uses pre-trained models to improve the performance of a model on a new dataset without applying data augmentation techniques.
+            </p>
+            <p class="expand-text" data-original-text="Using Python and TensorFlow, I implemented a transfer learning workflow without data augmentation. The project involves using a pre-trained model and fine-tuning it on the new dataset. This project highlights my skills in transfer learning and TensorFlow, demonstrating an effective approach to improve model accuracy using pre-trained models.">
+            </p>
+            <div class="btn-container">
+              <a href="https://colab.research.google.com/drive/1WMXM5pGoRIQir-FHBLmi-kjhjH8MIsdi?usp=drive_link" target="_blank">
+                <button class="btn btn-color-2 project-btn">Colab Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Transfer Learning Without Data Augmentation is a project that uses pre-trained models to improve the performance of a model on a new dataset without applying data augmentation techniques. Using Python and TensorFlow, I implemented a transfer learning workflow without data augmentation. The project involves using a pre-trained model and fine-tuning it on the new dataset. This project highlights my skills in transfer learning and TensorFlow, demonstrating an effective approach to improve model accuracy using pre-trained models.">
+                Show More
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <p class="projects_title">Website Development Projects</p>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/jain-image.jpg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Jain Community Services</h2>
+            <p class="location_text">HTML | CSS | JavaScript</p>
+            <p class="expand-text" data-original-text="A website created using HTML, CSS, and JavaScript to support and promote Jain Community Services.">
+              A website created using HTML, CSS, and JavaScript to support and promote Jain Community Services.
+            </p>
+            <p class="expand-text" data-original-text="The website for Jain Community Services was developed using HTML, CSS, and JavaScript to provide an accessible and user-friendly platform for community engagement. It features a range of resources, event information, and support services tailored to the needs of the Jain community. The design emphasizes clarity and ease of navigation, ensuring users can easily find the information they need.">
+            </p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99/JCSC.github.io" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="The website for Jain Community Services was developed using HTML, CSS, and JavaScript to provide an accessible and user-friendly platform for community engagement. It features a range of resources, event information, and support services tailored to the needs of the Jain community. The design emphasizes clarity and ease of navigation, ensuring users can easily find the information they need.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/timeline-photos/drycleaner-logo.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">WRINKLES</h2>
+            <p class="location_text">HTML | CSS | JS</p>
+            <p class="expand-text" data-original-text="A website created using HTML, CSS, and JavaScript for WRINKLES, a dry cleaning company, to streamline customer interactions and service bookings.">
+              A website created using HTML, CSS, and JavaScript for WRINKLES, a dry cleaning company, to streamline customer interactions and service bookings.
+            </p>
+            <p class="expand-text" data-original-text="The WRINKLES website, developed using HTML, CSS, and JavaScript, offers a seamless platform for customers to access dry cleaning services. It provides an intuitive interface for scheduling pickups, tracking orders, and exploring service offerings. The design ensures a smooth user experience, emphasizing convenience and efficiency for all users."></p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99?tab=repositories" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="The WRINKLES website, developed using HTML, CSS, and JavaScript, offers a seamless platform for customers to access dry cleaning services. It provides an intuitive interface for scheduling pickups, tracking orders, and exploring service offerings. The design ensures a smooth user experience, emphasizing convenience and efficiency for all users.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/profile-pic.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Personal Portfolio</h2>
+            <p class="location_text">HTML | CSS | JavaScript</p>
+            <p class="expand-text" data-original-text="A personal portfolio website created using HTML, CSS, and JavaScript to showcase projects, skills, and achievements.">
+              A personal portfolio website created using HTML, CSS, and JavaScript to showcase projects, skills, and achievements.
+            </p>
+            <p class="expand-text" data-original-text="This personal portfolio website, developed with HTML, CSS, and JavaScript, serves as a comprehensive showcase of projects, skills, and accomplishments. It features an interactive design that highlights key work and provides easy navigation through various sections. The website aims to present a professional image while allowing visitors to explore the user's expertise and achievements."></p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99/Akshay-Gupta" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="This personal portfolio website, developed with HTML, CSS, and JavaScript, serves as a comprehensive showcase of projects, skills, and accomplishments. It features an interactive design that highlights key work and provides easy navigation through various sections. The website aims to present a professional image while allowing visitors to explore the user's expertise and achievements.">
+                Show More
+              </button>
+            </div>
+          </div> 
+          <!-- Project 4 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/timeline-photos/akshay-logo.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Akshay Design Co</h2>
+            <p class="location_text">Web Design Company</p>
+            <p class="expand-text" data-original-text="Akshay Design Co. offers innovative web and graphic design solutions to elevate your brand's visual presence.">
+              Akshay Design Co. offers innovative web and graphic design solutions to elevate your brand's visual presence.
+            </p>
+            <p class="expand-text" data-original-text="Akshay Design Co. specializes in delivering high-quality web and graphic design solutions tailored to meet the unique needs of each client. Our services focus on creating visually engaging and functional designs that enhance brand identity and user experience. With a commitment to creativity and precision, we help businesses stand out in a competitive digital landscape."></p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Akshay Design Co. specializes in delivering high-quality web and graphic design solutions tailored to meet the unique needs of each client. Our services focus on creating visually engaging and functional designs that enhance brand identity and user experience. With a commitment to creativity and precision, we help businesses stand out in a competitive digital landscape.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/timeline-photos/akshay-logo.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">MORE COMING SOON</h2>
+            <p class="location_text">NEW CLIENTS IN TALK</p>
+            </div>
+          </div>
+      </div>
+      <p class="projects_title">Other Projects</p>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project 1 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/2048-image.jpeg" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">2048</h2>
+            <p class="location_text">JavaScript | CSS | HTML</p>
+            <p class="expand-text" data-original-text="A modern rendition of the classic game 2048, created with JavaScript, CSS, and HTML.">
+              A modern rendition of the classic game 2048, created with JavaScript, CSS, and HTML.
+            </p>
+            <p class="expand-text" data-original-text="Utilizing JavaScript, CSS, and HTML, I embarked on the creation of my rendition of the classic game 2048. Inspired by the original concept, I aimed to blend sleek design with intuitive gameplay mechanics. Leveraging JavaScript for the game logic, CSS for visually appealing aesthetics, and HTML for structuring the layout, I meticulously crafted an engaging user experience. Through this project, I honed my skills in front-end development, mastering the art of combining code and creativity to bring a timeless game to life in the digital realm.">
+            </p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99/2048" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="Utilizing JavaScript, CSS, and HTML, I embarked on the creation of my rendition of the classic game 2048. Inspired by the original concept, I aimed to blend sleek design with intuitive gameplay mechanics. Leveraging JavaScript for the game logic, CSS for visually appealing aesthetics, and HTML for structuring the layout, I meticulously crafted an engaging user experience. Through this project, I honed my skills in front-end development, mastering the art of combining code and creativity to bring a timeless game to life in the digital realm.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/chatbot-image.webp" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">AI Chatbot</h2>
+            <p class="location_text">Python | NLTK</p>
+            <p class="expand-text" data-original-text="An interactive Python chatbot built using NLTK for natural language processing.">
+              An interactive Python chatbot built using NLTK for natural language processing.
+            </p>
+            <p class="expand-text" data-original-text="I crafted a Python chatbot using NLTK for natural language processing. Through Python's flexibility and NLTK's tools, I created an interactive conversational agent capable of understanding and responding to user inputs. This project honed my Python skills and deepened my understanding of NLP algorithms, paving the way for future AI endeavors.">
+            </p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99/chatbot" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I crafted a Python chatbot using NLTK for natural language processing. Through Python's flexibility and NLTK's tools, I created an interactive conversational agent capable of understanding and responding to user inputs. This project honed my Python skills and deepened my understanding of NLP algorithms, paving the way for future AI endeavors.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/fitness-image.png" alt="Project 4" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Fitness Tracker</h2>
+            <p class="location_text">Python | .txt</p>
+            <p class="expand-text" data-original-text="A Python-based fitness tracker using text files for data storage and analysis.">
+              A Python-based fitness tracker using text files for data storage and analysis.
+            </p>
+            <p class="expand-text" data-original-text="I developed a fitness tracker using Python and text files for data storage. By leveraging Python's versatility, I designed a robust tracker capable of recording and analyzing fitness data efficiently. Utilizing text files for data storage ensured simplicity and accessibility. This project not only strengthened my Python skills but also provided valuable experience in data management and analysis for fitness tracking purposes.">
+            </p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99/fitness-tracker" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I developed a fitness tracker using Python and text files for data storage. By leveraging Python's versatility, I designed a robust tracker capable of recording and analyzing fitness data efficiently. Utilizing text files for data storage ensured simplicity and accessibility. This project not only strengthened my Python skills but also provided valuable experience in data management and analysis for fitness tracking purposes.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/expense-image.jpeg" alt="Project 5" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Expense Tracker</h2>
+            <p class="location_text">Python | Matplotlib</p>
+            <p class="expand-text" data-original-text="A comprehensive expense tracker built with Python and Matplotlib for visualizing financial data.">
+              A comprehensive expense tracker built with Python and Matplotlib for visualizing financial data.
+            </p>
+            <p class="expand-text" data-original-text="I designed an expense tracker using Python and Matplotlib for visualizations. By harnessing Python's versatility and Matplotlib's robust plotting capabilities, I developed a comprehensive tool for tracking and visualizing expenses. This project not only enhanced my Python programming skills but also provided valuable experience in data visualization and analysis. Through the seamless integration of Python scripts and Matplotlib plots, I created an efficient expense tracking solution that enables users to gain insights into their financial habits.">
+            </p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99/expense-tracker" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I designed an expense tracker using Python and Matplotlib for visualizations. By harnessing Python's versatility and Matplotlib's robust plotting capabilities, I developed a comprehensive tool for tracking and visualizing expenses. This project not only enhanced my Python programming skills but also provided valuable experience in data visualization and analysis. Through the seamless integration of Python scripts and Matplotlib plots, I created an efficient expense tracking solution that enables users to gain insights into their financial habits.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/weather-image.jpeg" alt="Project 6" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Weather App</h2>
+            <p class="location_text">Python | API</p>
+            <p class="expand-text" data-original-text="An intuitive weather app developed with Python and the OpenWeatherMap API for real-time weather information.">
+              An intuitive weather app developed with Python and the OpenWeatherMap API for real-time weather information.
+            </p>
+            <p class="expand-text" data-original-text="I created a weather app using Python and the OpenWeatherMap API. Through Python's flexibility and the API's data retrieval capabilities, I crafted an intuitive app for accessing real-time weather information. This project allowed me to enhance my Python skills while gaining valuable experience in API integration and data visualization. By combining Python's power with live weather data, I developed a practical tool for users to stay informed about current weather conditions effortlessly.">
+            </p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99/weather" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I created a weather app using Python and the OpenWeatherMap API. Through Python's flexibility and the API's data retrieval capabilities, I crafted an intuitive app for accessing real-time weather information. This project allowed me to enhance my Python skills while gaining valuable experience in API integration and data visualization. By combining Python's power with live weather data, I developed a practical tool for users to stay informed about current weather conditions effortlessly.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/scoreboard-picture.jpg" alt="Project 7" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Scoreboard</h2>
+            <p class="location_text">Python | Matplotlib</p>
+            <p class="expand-text" data-original-text="An intuitive scoreboard developed using Python and Matplotlib for visualizing game statistics and other data.">
+              An intuitive scoreboard developed using Python and Matplotlib for visualizing game statistics and other data.
+            </p>
+            <p class="expand-text" data-original-text="I developed a scoreboard using Python and Matplotlib for visualizations. With Python's versatility and Matplotlib's powerful plotting capabilities, I crafted an intuitive scoreboard for displaying game statistics or other data. This project honed my Python programming skills while providing valuable experience in data visualization and graphical representation. By combining Python's scripting capabilities with Matplotlib's plotting functionalities, I created a versatile tool for visualizing data in a clear and engaging manner.">
+            </p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99/scoreboard" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I developed a scoreboard using Python and Matplotlib for visualizations. With Python's versatility and Matplotlib's powerful plotting capabilities, I crafted an intuitive scoreboard for displaying game statistics or other data. This project honed my Python programming skills while providing valuable experience in data visualization and graphical representation. By combining Python's scripting capabilities with Matplotlib's plotting functionalities, I created a versatile tool for visualizing data in a clear and engaging manner.">
+                Show More
+              </button>
+            </div>
+          </div>
+          <!-- Project 7 -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-pictures/tictactoe.png" alt="Project 8" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Tic Tac Toe</h2>
+            <p class="location_text">Python | PyGame</p>
+            <p class="expand-text" data-original-text="A classic TicTacToe game developed using Python and PyGame.">
+              A classic TicTacToe game developed using Python and PyGame.
+            </p>
+            <p class="expand-text" data-original-text="I created a TicTacToe game using Python and PyGame. Leveraging PyGame's capabilities for game development, I designed an engaging and interactive version of this classic game. This project allowed me to enhance my programming skills in Python and gain experience in using PyGame for game mechanics and user interface design. By combining Python's versatility with PyGame's functionality, I developed a fun and accessible game experience.">
+            </p>
+            <div class="btn-container">
+              <a href="https://github.com/AkshayG99/Tic-Tac-Toe" target="_blank">
+                <button class="btn btn-color-2 project-btn">Github Link</button>
+              </a>
+              <button class="btn btn-color-2 project-btn-learn" data-expand-text="I created a TicTacToe game using Python and PyGame. Leveraging PyGame's capabilities for game development, I designed an engaging and interactive version of this classic game. This project allowed me to enhance my programming skills in Python and gain experience in using PyGame for game mechanics and user interface design. By combining Python's versatility with PyGame's functionality, I developed a fun and accessible game experience.">
+                Show More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a>akshaymgupta2008@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <a href="https://www.linkedin.com/in/akshay-m-gupta/" target="_blank"><img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          /></a>
+          <p><a href="https://www.linkedin.com/in/akshay-m-gupta/" target="_blank">LinkedIn</a></p>
+          <a href="https://github.com/AkshayG99" target="_blank"><img
+          src="./assets/github.png"
+          alt="Github icon"
+          class="icon contact-icon"
+        /></a>
+        <p><a href="https://github.com/AkshayG99" target="_blank">Github</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Akshay Design Co. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
